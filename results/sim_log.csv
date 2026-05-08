@@ -1,0 +1,4 @@
+test,status,cycles,program
+add_test,PASS,80,tests/add_test.mem
+fibonacci,PASS,160,tests/fibonacci.mem
+bubble_sort,PASS,160,tests/bubble_sort.mem

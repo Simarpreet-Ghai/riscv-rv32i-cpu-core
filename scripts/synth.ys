@@ -1,0 +1,23 @@
+read_verilog -DSYNTHESIS src/riscv_top.v
+read_verilog -DSYNTHESIS src/fetch.v
+read_verilog -DSYNTHESIS src/decode.v
+read_verilog -DSYNTHESIS src/execute.v
+read_verilog -DSYNTHESIS src/mem_stage.v
+read_verilog -DSYNTHESIS src/writeback.v
+read_verilog -DSYNTHESIS src/alu.v
+read_verilog -DSYNTHESIS src/regfile.v
+read_verilog -DSYNTHESIS src/control.v
+read_verilog -DSYNTHESIS src/hazard.v
+read_verilog -DSYNTHESIS src/imem.v
+read_verilog -DSYNTHESIS src/dmem.v
+read_verilog -DSYNTHESIS src/if_id_reg.v
+read_verilog -DSYNTHESIS src/id_ex_reg.v
+read_verilog -DSYNTHESIS src/ex_mem_reg.v
+read_verilog -DSYNTHESIS src/mem_wb_reg.v
+
+hierarchy -check -top riscv_top
+proc
+opt
+memory
+opt
+stat

@@ -1,0 +1,2 @@
+# No third-party Python packages are required.
+# scripts/parse_results.py uses only the Python standard library.
